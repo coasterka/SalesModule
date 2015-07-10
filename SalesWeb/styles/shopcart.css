@@ -1,0 +1,40 @@
+﻿#content {
+    font-size: 1.6em;
+    font-family: Vrinda, Tahoma, sans-serif;
+}
+
+#ContentPlaceHolder1_DataList1 {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+#ContentPlaceHolder1_DataList1 tbody tr td {
+    display: block;
+    border-radius: 10px;
+    border: 1px solid red;
+    
+}
+
+#ContentPlaceHolder1_DataList1 td {
+    margin-bottom: 10px;
+}
+
+#ContentPlaceHolder1_DataList1 td:last-child {
+    margin-bottom: 0;
+}
+
+#ContentPlaceHolder1_btnDeleteSelected {
+    background-color: tomato;
+    color: white;
+}
+
+#ContentPlaceHolder1_btnDeleteSelected:hover {
+    text-shadow: 1px 1px 1px black;
+    background-color: red;
+    transition-duration: 1s;
+}
+
+#ContentPlaceHolder1_lblTotalOrderAmount {
+    color: red;
+    font-weight: bold;
+}

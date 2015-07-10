@@ -1,0 +1,170 @@
+﻿@font-face {
+    src: url('../fonts/Arkitech Round Light.ttf');
+    font-family: 'Arkitech Round Light';
+}
+
+@font-face {
+    src: url('../fonts/Bulgaria Moderna V3.otf');
+    font-family: 'Bulgaria Moderna V3';
+}
+
+@font-face {
+    src: url('../fonts/Veselka 4F.ttf');
+    font-family: 'Veselka 4F';
+}
+
+@font-face {
+    src: url('../fonts/PRST.ttf');
+    font-family: 'PRST';
+}
+
+body, form, header, div, img, a, ul, li, nav, table, input, textarea, select, label {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #999;
+    font-size: 10px;
+    font-family: 'Veselka 4F', Calibri, Tahoma, sans-serif;
+}
+
+a:active, a:focus, input[type="submit"]:focus, input[type="number"]:focus, input[type="submit"]:active,
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="number"]:active,
+input[type="text"]:active, input[type="password"]:active, input[type="email"]:active, textarea:focus, textarea:active,
+select:focus, select:active {
+    outline: 0;
+}
+
+#wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 160px;
+    margin: 0 auto;
+    background-color: #222;
+}
+
+header #logoContainer a {
+    overflow: hidden;
+    font-size: 0;
+}
+
+header #titleContainer {
+    text-align: center;
+}
+
+header #titleContainer p {
+    font-size: 5.5em;
+    line-height: 40px;
+    color: white;
+    position: relative;
+    right: 360px;
+    text-shadow: 2px 2px 2px red;
+}
+
+#content {
+    padding: 40px 50px;
+    background-color: white;
+    box-shadow: 2px 2px 5px red;
+}
+
+#wrapper nav {
+    height: 40px;
+}
+
+#mainMenu {
+    width: 100%;
+}
+
+#mainMenu ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    float: none !important;
+    background-color: black;
+}
+
+#mainMenu ul li {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+}
+
+#headerLogo {
+    display: none;
+}
+
+#mainMenu ul li::before {
+    pointer-events: none;
+    content: '';
+    position: absolute;
+    border: tomato solid 2px;
+    border-radius: 10px;
+    top: -10px;
+    right: -10px;
+    bottom: -10px;
+    left: -10px;
+    opacity: 0;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-property: top, right, bottom, left;
+    transition-property: top, right, bottom, left;
+}
+
+#mainMenu ul li:hover::before {
+    top: -2px;
+    right: -2px;
+    bottom: -2px;
+    left: -2px;
+    opacity: 1;
+}
+
+#mainMenu ul li a {
+    font-size: 3.5em;
+    color: white;
+    padding: 0 68px;
+    font-family: 'PRST', Tahoma, sans-serif;
+}
+
+input[type="submit"] {
+    font-weight: bold;
+    background-color: grey;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+input[type="submit"]:hover {
+    background-color: #ddd;
+    cursor: pointer;
+    color: black;
+    text-shadow: 1px 1px 1px tomato;
+    border-color: grey;
+}
+
+input[type="text"], input[type="password"], input[type="email"], input[type="number"], textarea {
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 5px;
+}
+
+input[type="text"]:focus, select:focus, textarea:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="number"]:focus {
+    background-color: #eee;
+    font-weight: bold;
+    border-color: darkred;
+}

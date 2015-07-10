@@ -1,0 +1,34 @@
+﻿#content {
+    font-size: 1.5em;
+    font-family: Vrinda, Tahoma, sans-serif;
+}
+
+#content table {
+    margin: 0 auto;
+    border: 1px solid #c41818;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#content table:nth-child(2) {
+    margin-top: 20px;
+    width: 406px;
+}
+
+#content table:nth-child(2) tbody tr td:nth-child(1) {
+    border-right: 0;
+}
+
+#content table tbody tr td:nth-child(1) {
+    color: #c41818;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 0.9em;
+    margin-right: 5px;
+    width: 120px;
+    border-right: 1px solid #c41818;
+}
+
+#content table tbody tr td:nth-child(2) {
+    padding-left: 15px;
+}

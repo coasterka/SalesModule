@@ -1,0 +1,373 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1911B9BD-B242-4F69-9607-B32C7CE35961}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SalesDesktop</RootNamespace>
+    <AssemblyName>SalesDesktop</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://localhost:50828/install/publish.html/</InstallUrl>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>SalesDesktop.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Untitled-1.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>14BF4E0D093F3A8E5035BBB1B1D84723AB2B6310</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>SalesDesktop_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.1\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASPNETDB_DataSet.cs">
+      <DependentUpon>ASPNETDB_DataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ASPNETDB_DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ASPNETDB_DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ASPNETDB_MDFDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ASPNETDB_MDFDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageOrder.Designer.cs">
+      <DependentUpon>ManageOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\ReportApprovedOrders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportApprovedOrders.Designer.cs">
+      <DependentUpon>ReportApprovedOrders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportClients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportClients.Designer.cs">
+      <DependentUpon>ReportClients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportGroups.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportGroups.Designer.cs">
+      <DependentUpon>ReportGroups.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportOrders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportOrders.Designer.cs">
+      <DependentUpon>ReportOrders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportPaymentTypes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportPaymentTypes.Designer.cs">
+      <DependentUpon>ReportPaymentTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportProducts.Designer.cs">
+      <DependentUpon>ReportProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportRejectedOrders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportRejectedOrders.Designer.cs">
+      <DependentUpon>ReportRejectedOrders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportShippers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportShippers.Designer.cs">
+      <DependentUpon>ReportShippers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Searches\SearchClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Searches\SearchClient.Designer.cs">
+      <DependentUpon>SearchClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Searches\SearchGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Searches\SearchGroup.Designer.cs">
+      <DependentUpon>SearchGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Searches\SearchOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Searches\SearchOrder.Designer.cs">
+      <DependentUpon>SearchOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Searches\SearchPaymentType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Searches\SearchPaymentType.Designer.cs">
+      <DependentUpon>SearchPaymentType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Searches\SearchProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Searches\SearchProduct.Designer.cs">
+      <DependentUpon>SearchProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Searches\SearchShipper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Searches\SearchShipper.Designer.cs">
+      <DependentUpon>SearchShipper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View_Order_Details_DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>View_Order_Details_DataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageOrder.resx">
+      <DependentUpon>ManageOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Reports\ReportApprovedOrders.resx">
+      <DependentUpon>ReportApprovedOrders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportClients.resx">
+      <DependentUpon>ReportClients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportGroups.resx">
+      <DependentUpon>ReportGroups.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportOrders.resx">
+      <DependentUpon>ReportOrders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportPaymentTypes.resx">
+      <DependentUpon>ReportPaymentTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportProducts.resx">
+      <DependentUpon>ReportProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportRejectedOrders.resx">
+      <DependentUpon>ReportRejectedOrders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportShippers.resx">
+      <DependentUpon>ReportShippers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Searches\SearchClient.resx">
+      <DependentUpon>SearchClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Searches\SearchGroup.resx">
+      <DependentUpon>SearchGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Searches\SearchOrder.resx">
+      <DependentUpon>SearchOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Searches\SearchPaymentType.resx">
+      <DependentUpon>SearchPaymentType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Searches\SearchProduct.resx">
+      <DependentUpon>SearchProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Searches\SearchShipper.resx">
+      <DependentUpon>SearchShipper.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ASPNETDB_DataSet.xsc">
+      <DependentUpon>ASPNETDB_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ASPNETDB_DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ASPNETDB_DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ASPNETDB_DataSet.xss">
+      <DependentUpon>ASPNETDB_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ASPNETDB_MDFDataSet1.xsc">
+      <DependentUpon>ASPNETDB_MDFDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ASPNETDB_MDFDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ASPNETDB_MDFDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ASPNETDB_MDFDataSet1.xss">
+      <DependentUpon>ASPNETDB_MDFDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ClassDiagram.cd" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="SalesDesktop_TemporaryKey.pfx" />
+    <None Include="View_Order_Details_DataSet.xsc">
+      <DependentUpon>View_Order_Details_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="View_Order_Details_DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>View_Order_Details_DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="View_Order_Details_DataSet.xss">
+      <DependentUpon>View_Order_Details_DataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="logoBig.png" />
+    <Content Include="Untitled-1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

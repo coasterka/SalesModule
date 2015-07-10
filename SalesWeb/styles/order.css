@@ -1,0 +1,71 @@
+﻿#content {
+    font-size: 1.5em;
+    font-family: Vrinda, Tahoma, sans-serif;
+}
+
+#userInfo {
+    position: relative;
+}
+
+#orderInfo, #userInfo {
+    border: 1px solid #c41818;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.label {
+    color: #c41818;
+    font-style:italic;
+    font-weight: bold;
+    font-size: 0.9em;
+    margin-right: 5px;
+}
+
+#userInfo table tbody tr td:nth-child(2) input, select, textarea {
+    width: 200px;
+}
+
+#userInfo table tbody tr td:nth-child(2) input, textarea {
+    margin: 0;
+}
+
+select {
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+#ContentPlaceHolder1_lblProdType {
+    text-transform: capitalize;
+}
+
+#ContentPlaceHolder1_btnSendOrder {
+    position: absolute;
+    right: 20px;
+    bottom: 50px;
+}
+
+#ContentPlaceHolder1_btnContinueShopping {
+    margin-top: 15px;
+}
+
+#content a {
+    color: red;
+    font-weight: bold;
+    text-decoration: none;
+    font-style: italic;
+}
+
+#content a::after {
+    content: " >>>";
+    position: relative;
+    opacity: 0;
+    left: -10px;
+    -webkit-transition: all 0.7s;
+    color: black;
+    transition: all 0.7s;
+}
+
+#content a:hover::after {
+    opacity: 1;
+    left: 0px;
+}

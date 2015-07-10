@@ -1,0 +1,46 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Sales.master.cs" Inherits="SalesWeb.Sales" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Sales Module</title>
+    <link type="text/css" rel="stylesheet" href="styles/global.css"/>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+    <meta charset="utf-8" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>    
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="wrapper">
+            <header>
+                <div id="logoContainer">
+                    <a href="index.aspx">
+                        <asp:Image ID="headerLogo" runat="server" ImageUrl="~/images/logoBig.png" AlternateText="headerLogo" />
+                    </a>
+                </div>
+                <div id="titleContainer">
+                    <p>SaleS Module</p>
+                </div>
+            </header>
+            <nav>
+                <asp:Menu ID="mainMenu" runat="server" EnableTheming="True">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/index.aspx" Text="Home" Value="home"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Menu.aspx" Text="Products" Value="products"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Contacts.aspx" Text="Contacts" Value="contacts"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Map.aspx" Text="Sitemap" Value="sitemap"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Shopcart.aspx" Text="Shopcart" Value="shopcart"></asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+            </nav>
+            <div id="content">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

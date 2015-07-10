@@ -1,0 +1,139 @@
+﻿@font-face {
+    src: url("../fonts//fontawesome-webfont.ttf");
+    font-family: "FontAwesome";
+}
+
+#content {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1.5em;
+    font-family: Vrinda, Tahoma, sans-serif;
+}
+
+#leftColumn {
+    margin-right: 50px;
+}
+
+#rightColumn {
+    position: relative;
+    top: 47px;
+}
+
+#ContentPlaceHolder1_Label1 {
+    font-style: italic;
+}
+
+#content #ContentPlaceHolder1_GridView1 {
+    background-color: tomato;
+    border: none;
+    width: 180px;
+}
+
+#content #ContentPlaceHolder1_GridView1 td {
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    padding-left: 5px;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    color: white;
+    line-height: 30px;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    padding-right: 2.2em;
+    -webkit-transition-duration: 0.1s;
+    transition-duration: 0.1s;
+}
+
+#content #ContentPlaceHolder1_GridView1 td:hover {
+    cursor: pointer;
+    background-color: gray;
+}
+
+#content #ContentPlaceHolder1_GridView1 td::before {
+    content: "\f138";
+    position: absolute;
+    right: 1em;
+    padding: 0 1px;
+    font-family: FontAwesome;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-transition-duration: 0.1s;
+    transition-duration: 0.1s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+#content #ContentPlaceHolder1_GridView1 td:hover::before,
+#content #ContentPlaceHolder1_GridView1 td:focus::before,
+#content #ContentPlaceHolder1_GridView1 td:active::before {
+    -webkit-transform: translateX(8px);
+    transform: translateX(8px);
+}
+
+#content #ContentPlaceHolder1_GridView1 td a {
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    font-size: 1.2em;
+}
+
+#rightColumn, #ContentPlaceHolder1_GridView2 {
+    width: 100%;
+}
+
+#ContentPlaceHolder1_GridView2 {
+    border: 2px solid tomato;
+}
+
+#ContentPlaceHolder1_GridView2 tr td:last-child a {
+    text-decoration: none;
+    color: gray;
+    font-size: 1.05em;
+}
+
+#ContentPlaceHolder1_GridView2 tr td:last-child a:hover {
+    color: red;
+}
+
+#ContentPlaceHolder1_DataList1 {
+    width: 100% !important;
+    position: relative;
+    top: -35px;
+}
+
+#ContentPlaceHolder1_DataList1 td {
+    border-radius: 10px;
+    width: 230px;
+}
+
+#ContentPlaceHolder1_DataList1 td a {
+    color: red;
+    font-weight: bold;
+    text-decoration: none;
+    font-style: italic;
+}
+
+#ContentPlaceHolder1_DataList1 td a:after {
+    content: " >>>";
+    position: relative;
+    opacity: 0;
+    left: -10px;
+    -webkit-transition: all 0.7s;
+    color: black;
+    transition: all 0.7s;
+}
+
+#ContentPlaceHolder1_DataList1 td a:hover:after {
+    opacity: 1;
+    left: 0px;
+}
+
+img {
+    max-width: 235px;
+}

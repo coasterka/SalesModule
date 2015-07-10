@@ -1,0 +1,49 @@
+﻿#content {
+    font-size: 1.5em;
+    font-family: Vrinda, Tahoma, sans-serif;
+}
+
+#ContentPlaceHolder1_FormView1 {
+    width: 100%;
+}
+
+#ContentPlaceHolder1_FormView1  tbody tr td {
+    position: relative;
+}
+
+#prodImg img {
+    max-width: 450px;
+}
+
+#productInfo {
+    position: absolute;
+    top: -22px;
+}
+
+#prodImg {
+    display: inline-block;
+    max-width: 450px;
+    margin-right: 40px;
+    border-radius: 10px;
+}
+
+#prodImg img {
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px black;
+}
+
+#productInfo {
+    display: inline-block;
+}
+
+#ContentPlaceHolder1_FormView1_ProdTypeLabel {
+    text-transform: capitalize;
+}
+
+.label {
+    color: #c41818;
+    font-style:italic;
+    font-weight: bold;
+    font-size: 0.9em;
+    margin-right: 5px;
+}

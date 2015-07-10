@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalesWeb", "SalesWeb\SalesWeb.csproj", "{BCF30AF6-31BB-481B-B43E-7D6113A8E4B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalesDesktop", "SalesDesktop\SalesDesktop.csproj", "{1911B9BD-B242-4F69-9607-B32C7CE35961}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BCF30AF6-31BB-481B-B43E-7D6113A8E4B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCF30AF6-31BB-481B-B43E-7D6113A8E4B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCF30AF6-31BB-481B-B43E-7D6113A8E4B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCF30AF6-31BB-481B-B43E-7D6113A8E4B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1911B9BD-B242-4F69-9607-B32C7CE35961}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1911B9BD-B242-4F69-9607-B32C7CE35961}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1911B9BD-B242-4F69-9607-B32C7CE35961}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1911B9BD-B242-4F69-9607-B32C7CE35961}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
